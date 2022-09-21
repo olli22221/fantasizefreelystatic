@@ -1,0 +1,35 @@
+.left-panel {
+    background-color: lightyellow;
+}
+
+.right-panel {
+    background-color: lightgreen;
+}
+.container {
+    width: fit-content;
+}
+
+.row {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.taskdscr {
+    margin: 200px;
+    background-color: rgb(190, 165, 132);
+    padding: 100px 60px;
+
+}
+
+.startbtnpanel {
+    margin: 200px;
+    font-size: 30px;
+    border: 1px solid #1a202c;
+    background-color: aliceblue;
+}
+
+
+
+
+
