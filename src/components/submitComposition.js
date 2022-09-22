@@ -186,7 +186,7 @@ const prepareComposition = (composition_) => {
   return (
     <div >
        { submitCompositionFlag
-                    ?<div > <div style={{fontWeight: "bold",fontSize:"22px",marginBottom:"30px", textAlign:"center", backgroundColor:"#399ddb"}}>Submitting the Composition</div> 
+                    ?<div > <div style={{fontWeight: "bold",fontSize:"22px",marginBottom:"30px", textAlign:"center", backgroundColor:"#399ddb"}}>Submitting</div> 
                     <div style={{marginLeft:"200px"}}><ReactLoading type={"spin"} color={"ffffff"} height={'20%'} width={'20%'} /></div></div>
 
                    :
