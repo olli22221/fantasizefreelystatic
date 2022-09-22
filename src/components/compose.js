@@ -5346,7 +5346,7 @@ const processInspirations = (inspirations) => {
 
            
 
-                    <div style={{marginTop:"360px",width:"130px",border:"solid 4px silver",borderRadius:"20px",backgroundColor:"#debd90"}} className='column3'>
+                    <div style={{marginTop:"360px",width:"130px",marginLeft:"10px",border:"solid 4px silver",borderRadius:"20px",backgroundColor:"#debd90"}} className='column3'>
                     <Button disabled= {inspirationFlag}  style={{"margin":"3px","font-weight": "bold","borderRadius":"5px","color":"white","height":"40px","width":"125px","backgroundColor":"#403c3b","border":"#403c3b 2px solid"}} onClick={() => {changeDuration("whole")}}> Whole Notes </Button>
                     <Button disabled= {inspirationFlag} style={{"margin":"3px","font-weight": "bold","borderRadius":"5px","color":"white","height":"40px","width":"125px","backgroundColor":"#403c3b","border":"#403c3b 2px solid"}} onClick={() => {changeDuration("half")}} > Half Notes </Button>
                     <Button disabled= {inspirationFlag} style={{"margin":"3px","font-weight": "bold","borderRadius":"5px","color":"white","height":"40px","width":"125px","backgroundColor":"#403c3b","border":"#403c3b 2px solid"}} onClick={() => {changeDuration("quarter")}}> Quarter Notes </Button>
