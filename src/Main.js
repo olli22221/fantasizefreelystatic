@@ -106,14 +106,14 @@ function Main() {
         <Box
       component="form"
       sx={{
-        '& > :not(style)': { m: 2, width: '40ch' },
+        '& > :not(style)': { m: 2, width: '45ch' },
       }}
       noValidate
       autoComplete="off"
     >
       <TextField
         id="outlined-name"
-        label="Please type your initials here"
+        label="Please type your initials from the survey here"
         value={name}
         onChange={handleChange}
         style={{border: '3px solid #403c3b',backgroundColor:'white',marginTop:"50px"}}
