@@ -136,16 +136,13 @@ const prepareComposition = (composition_) => {
     
     
 
-    axios.post("https://fantasifreely.de/submitCompositionBasic", JSON.stringify(payload), {
+    axios.post("https://fantasifreely.de/submitCompositionStatic", JSON.stringify(payload), {
         headers: {
             "Content-Type": "application/json"
             
         }
     }).then((response) => {
-        console.log(response)
         
-        setmusicatResponse(response.data['musicatPNG'])
-        setTotalResult(response.data['totalScore'])
         const submissionCount = submissions + 1
         setSubmissions(submissionCount)
         
@@ -189,7 +186,7 @@ const prepareComposition = (composition_) => {
   return (
     <div >
        { submitCompositionFlag
-                    ?<div > <div style={{fontWeight: "bold",fontSize:"22px",marginBottom:"30px", textAlign:"center", backgroundColor:"#399ddb"}}>Musicat runs in the background</div> 
+                    ?<div > <div style={{fontWeight: "bold",fontSize:"22px",marginBottom:"30px", textAlign:"center", backgroundColor:"#399ddb"}}>Submitting the Composition</div> 
                     <div style={{marginLeft:"200px"}}><ReactLoading type={"spin"} color={"ffffff"} height={'25%'} width={'25%'} /></div></div>
 
                    :

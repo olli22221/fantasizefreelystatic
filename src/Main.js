@@ -42,7 +42,7 @@ function Main() {
             }
         
 
-       axios.post('https://fantasifreely.de/'+"startBasic",JSON.stringify(payload), {
+       axios.post('https://fantasifreely.de/'+"startStatic",JSON.stringify(payload), {
         headers: {
             "Content-Type": "application/json"
         }

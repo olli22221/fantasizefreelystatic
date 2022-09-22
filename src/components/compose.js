@@ -1398,7 +1398,7 @@ function Compose() {
 
             
             
-           testScoring()
+           
 
 
         }
@@ -1890,7 +1890,7 @@ function Compose() {
                 setPointer(newActivatedIndex + stepsFornewActivated)
 
             }
-            testScoring()
+            
         }
     
         
@@ -4127,7 +4127,7 @@ function Compose() {
         
                 
             }
-            testScoring()
+        
             
             
 
@@ -4318,7 +4318,7 @@ const getSuggestions = () => {
         jwtToken: jwtToken
         
     }
-    axios.post("https://fantasifreely.de/runRNNBasic", JSON.stringify(payload), {
+    axios.post("https://fantasifreely.de/runRNNStatic", JSON.stringify(payload), {
         headers: {
             "Content-Type": "application/json"
             
@@ -4462,7 +4462,7 @@ const processInspirations = (inspirations) => {
 
 
 
-const testScoring = () => {
+/*const testScoring = () => {
 
     const composition= [measure1,measure2,measure3,measure4,measure5,
         measure6,measure7,measure8]
@@ -4490,7 +4490,7 @@ const testScoring = () => {
       console.log(error)
     });
 
-}
+}*/
 
 
         
