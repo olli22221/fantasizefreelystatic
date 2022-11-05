@@ -11,8 +11,9 @@ import Result from './components/result';
 import Tutorial from './components/tutorial';
 import { transitions, positions,types, Provider as AlertProvider } from 'react-alert'
 import AlertTemplate from 'react-alert-template-basic'
-
-
+import SurveyEndPage from './components/surveyEnd';
+import SurveyToken from './components/surveyToken';
+import SurveyPage from './components/survey';
 
 function App() {
  
