@@ -4,6 +4,17 @@ import {defaultpitches,defaultpitchesoccupied,defaultPitchesArray,defaultPitches
 
 const { persistAtom } = recoilPersist()
 
+export const allowed2 = atom ({
+    key: "allowed2",
+    default: false, 
+    effects_UNSTABLE: [persistAtom],
+})
+
+export const allowed = atom ({
+    key: "allowed",
+    default: false, 
+    effects_UNSTABLE: [persistAtom],
+})
 
 export const analogies = atom ({
     key: "analogies",

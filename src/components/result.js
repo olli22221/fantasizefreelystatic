@@ -8,7 +8,8 @@ import { measure1 as measure1Atom,measure2 as measure2Atom,
     fluencyScore as fluencyScoreAtom,flexabilityScore as flexabilityScoreAtom,
     submissions as submissionsAtom, jwtToken as jwtTokenAtom,
 analogies as analogiesAtom, groups as groupsAtom, totalResult as totalResultAtom} from '../redux/store'
-    
+import { allowed2 as allowedAtom2 } from "../redux/store";
+
 import { Progress } from 'react-sweet-progress';
 import { Button } from '@mui/material';
 import ReactTooltip from 'react-tooltip';
@@ -16,6 +17,7 @@ import ReactTooltip from 'react-tooltip';
 
 
 function Result() {
+    const [allowed2, setAllowed2] = useRecoilState(allowedAtom2);
 
     let nav = useNavigate();
     const maxTotalResult = 400
@@ -52,8 +54,8 @@ function Result() {
         setFlexabilityScore(0)
         setFluencyScore(0)
         setOriginalityScore(0)
-        nav("/")
-        
+        setAllowed2(true)
+        nav("/SurveyEndPage")
     }
 
     useEffect(() => {
@@ -107,7 +109,7 @@ function Result() {
                 <div style={{marginLeft:"750px"}}> 
                
                {submissions < 5 && <Button onClick={nextComposition} style={{margin:"50px","fontWeight": "bold","borderRadius":"5px","color":"white","height":"70px","backgroundColor":"#2e63b8","border":"#2e63b8 2px solid"}}>Next Composition</Button>}
-               {submissions > 3 && <Button onClick={endTask} style={{margin:"50px","fontWeight": "bold","borderRadius":"5px","color":"white","height":"70px","backgroundColor":"#2e63b8","border":"#2e63b8 2px solid"}}>End Task</Button>}
+               {submissions > 0 && <Button onClick={endTask} style={{margin:"50px","fontWeight": "bold","borderRadius":"5px","color":"white","height":"70px","backgroundColor":"#2e63b8","border":"#2e63b8 2px solid"}}>End Task</Button>}
    
    
                </div>

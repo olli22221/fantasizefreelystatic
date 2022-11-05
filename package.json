@@ -48,6 +48,8 @@
     "recoil": "^0.7.1",
     "recoil-persist": "^4.1.0",
     "styled-components": "^5.3.5",
+    "survey-react": "^1.9.56",
+    "survey-react-ui": "^1.9.56",
     "tone": "^14.7.77",
     "tonejs-instrument-violin-mp3": "^1.1.1",
     "typewriter-effect": "^2.19.0",

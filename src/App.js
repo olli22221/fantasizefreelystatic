@@ -38,12 +38,15 @@ function App() {
     <Router>
 
       <Routes>
-      <Route exact path='/' element={<Main/>}/>
+      <Route exact path='/' element={<SurveyPage/>}/>
+      <Route exact path='/Main' element={<Main/>}/>
       <Route exact path='/Tutorial' element={<Tutorial/>}/>
       <Route exact path='/CreativityTask' element={<CreativityTask/>}/>
       <Route exact path='/Compose' element={<Compose/>}/>
       <Route exact path='/Result' element={<Result/>}/>
       <Route exact path='/TestScoreBox' element={<TestScoreBox/>}/>
+      <Route exact path='/SurveyEndPage' element={<SurveyEndPage/>}/>
+      <Route exact path='/SurveyToken' element={<SurveyToken/>}/>
       </Routes>
 
       </Router>
