@@ -35,7 +35,7 @@ function SurveyToken() {
             <Popup open={open} closeOnDocumentClick onClose={closeModal}>   
                  <div className="modal">      <p>
   
- Enter this Completion Code on Profilic: C14RW7J7</p>      <a className="close" onClick={closeModal}>  
+ Enter the following  Completion Code on Prolific:       C14RW7J7</p>      <a className="close" onClick={closeModal}>  
                       &times;          </a>          
                         </div>  
             </Popup>
