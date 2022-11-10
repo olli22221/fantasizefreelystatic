@@ -74,7 +74,7 @@ function SurveyPage() {
 ,
   {
     name: "How is your experience with music",
-    title: "How is your experience with music.       (1->very few and 10->profound )",
+    title: "How is your experience with music.       (1->very few and 5->profound )",
     type: "rating",
     rateMin:1,
     rateMax:5,
