@@ -37,7 +37,7 @@ function SurveyPage() {
                 
                   type: "text",
                   name: "initials",
-                  title: "Enter your Initials please:",
+                  title: "Please enter your unique Prolific ID:",
                   isRequired: true
                 }
             ,
